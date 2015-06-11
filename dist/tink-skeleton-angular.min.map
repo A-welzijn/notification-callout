@@ -1,0 +1,1 @@
+{"version":3,"file":"tink-skeleton-angular.min.js","sources":["tink-skeleton-angular.js"],"names":["module","angular","e","directive","restrict","templateUrl"],"mappings":";AAAA,cACA,SAAWA,QACT,IACEA,OAASC,QAAQD,OAAO,gCACxB,MAAOE,GACPF,OAASC,QAAQD,OAAO,mCAE1BA,OAAOG,UAAU,+BAAgC,WAC/C,OACEC,SAAU,IACVC,YAAa"}
