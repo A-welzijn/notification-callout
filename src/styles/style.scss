@@ -1,0 +1,20 @@
+.errorMessages,
+.successMessages,
+.warningMessages {
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0;
+	margin-top: 15px;
+}
+
+	.errorMessages .alert,
+	.successMessages .alert,
+	.warningMessages .alert {
+		padding: 5px 0 5px 10px;
+		margin: 0 0 5px 0;
+	}
+
+	.warningMessages .alert-dismissible .close,
+	.successMessages .alert-dismissible .close {
+		margin-right: 10px;
+	}
