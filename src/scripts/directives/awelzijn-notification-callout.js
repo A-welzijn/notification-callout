@@ -8,7 +8,7 @@
   module.directive('aWelzijnNotificationCallout', [function () {
     return {
       restrict: 'E',
-      templateUrl: 'template.html'
+      templateUrl: 'templates/template.html'
     };
   }]);
 })();
