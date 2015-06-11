@@ -1,0 +1,1 @@
+{"version":3,"file":"awelzijn-notification-callout.min.js","sources":["awelzijn-notification-callout.js"],"names":["module","angular","e","directive","restrict","templateUrl"],"mappings":";AAAA,cACA,SAAWA,QACT,IACEA,OAASC,QAAQD,OAAO,gCACxB,MAAOE,GACPF,OAASC,QAAQD,OAAO,mCAE1BA,OAAOG,UAAU,+BAAgC,WAC/C,OACEC,SAAU,IACVC,YAAa"}
