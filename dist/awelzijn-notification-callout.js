@@ -12,7 +12,7 @@
     };
   }]);
 })();
-;angular.module('tink.skeleton').run(['$templateCache', function($templateCache) {
+;angular.module('awelzijn.notificationcallout').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('templates/template.html',
