@@ -1,10 +1,10 @@
 # A-Welzijn Notification Callouts
 
-v1.0.6
+v1.0.7
 
 ### Hoe het eruit ziet
 
-//screenshot
+![Screenshot](https://s3.amazonaws.com/f.cl.ly/items/1S1v2a0F0T2k0u0G1M1X/callout.PNG)
 
 ### Hoe het te gebruiken
 
