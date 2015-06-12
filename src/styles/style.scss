@@ -17,4 +17,9 @@
 	.warningMessages .alert-dismissible .close,
 	.successMessages .alert-dismissible .close {
 		margin-right: 10px;
+		float: right;
+	}
+	
+	.alert > strong {
+		margin-right: 8px;
 	}
