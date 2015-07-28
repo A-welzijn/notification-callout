@@ -1,6 +1,6 @@
 # A-Welzijn Notification Callouts
 
-v1.0.11
+v1.0.12
 
 ### Hoe het eruit ziet
 
