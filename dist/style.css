@@ -1,6 +1,7 @@
 .errorMessages,
 .successMessages,
-.warningMessages {
+.warningMessages,
+.messages {
   list-style-image: none;
   list-style-type: none;
   padding: 0;
@@ -8,12 +9,14 @@
 
 .errorMessages .alert,
 .successMessages .alert,
-.warningMessages .alert {
+.warningMessages .alert,
+.messages .alert {
   padding: 5px 0 5px 10px;
   margin: 0 0 5px 0; }
 
 .warningMessages .alert-dismissible .close,
-.successMessages .alert-dismissible .close {
+.successMessages .alert-dismissible .close,
+.messages .alert-dismissible .close {
   margin-right: 10px;
   float: right; }
 
