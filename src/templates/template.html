@@ -21,3 +21,11 @@
             </div>
       </li>
 </ul>
+<ul class="messages">
+      <li ng-repeat="message in messages">
+            <div class="alert callout alert-dismissible" role="alert">
+                  <a class="close float-right" data-dismiss="alert" aria-label="Sluit"><i class="fa fa-times"></i></a>
+                  <strong ng-show="message.title">{{message.title}}</strong>{{message.message}}
+            </div>
+      </li>
+</ul>
