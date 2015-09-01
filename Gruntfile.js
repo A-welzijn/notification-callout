@@ -397,6 +397,10 @@ module.exports = function (grunt) {
     'karma'
   ]);
 
+  grunt.registerTask('buildtest', [
+    'ngtemplates'
+  ]);
+
   grunt.registerTask('build', [
     'clean',
     'ngtemplates',
