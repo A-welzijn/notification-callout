@@ -75,7 +75,7 @@
     "\n" +
     "<ul class=\"successMessages\">\r" +
     "\n" +
-    "      <a-welzijn-notification-callout-message ng-repeat='callout in messages' call-out='callout' callout-class='callout-success' index='{{$index}}' />\r" +
+    "      <a-welzijn-notification-callout-message ng-repeat='callout in notifications' call-out='callout' callout-class='callout-success' index='{{$index}}' />\r" +
     "\n" +
     "</ul>\r" +
     "\n" +
@@ -87,7 +87,7 @@
     "\n" +
     "<ul class=\"messages\">\r" +
     "\n" +
-    "      <a-welzijn-notification-callout-message ng-repeat='callout in notifications' call-out='callout' callout-class='callout' index='{{$index}}' />\r" +
+    "      <a-welzijn-notification-callout-message ng-repeat='callout in messages' call-out='callout' callout-class='callout' index='{{$index}}' />\r" +
     "\n" +
     "</ul>"
   );

@@ -2,11 +2,11 @@
       <a-welzijn-notification-callout-message ng-repeat='callout in errors' call-out='callout' callout-class='callout-danger' index='{{$index}}' />
 </ul>
 <ul class="successMessages">
-      <a-welzijn-notification-callout-message ng-repeat='callout in messages' call-out='callout' callout-class='callout-success' index='{{$index}}' />
+      <a-welzijn-notification-callout-message ng-repeat='callout in notifications' call-out='callout' callout-class='callout-success' index='{{$index}}' />
 </ul>
 <ul class="warningMessages">
       <a-welzijn-notification-callout-message ng-repeat='callout in warnings' call-out='callout' callout-class='callout-warning' index='{{$index}}' />
 </ul>
 <ul class="messages">
-      <a-welzijn-notification-callout-message ng-repeat='callout in notifications' call-out='callout' callout-class='callout' index='{{$index}}' />
+      <a-welzijn-notification-callout-message ng-repeat='callout in messages' call-out='callout' callout-class='callout' index='{{$index}}' />
 </ul>
