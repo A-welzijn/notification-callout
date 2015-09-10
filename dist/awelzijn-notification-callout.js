@@ -87,7 +87,7 @@
     "\n" +
     "<ul class=\"messages\">\r" +
     "\n" +
-    "      <a-welzijn-notification-callout-message ng-repeat='callout in info' call-out='callout' callout-class='callout' index='{{$index}}' />\r" +
+    "      <a-welzijn-notification-callout-message ng-repeat='callout in notifications' call-out='callout' callout-class='callout' index='{{$index}}' />\r" +
     "\n" +
     "</ul>"
   );
