@@ -9,7 +9,10 @@
     module.directive('aWelzijnNotificationCallout', [function () {
         return {
             restrict: 'E',
-            templateUrl: 'templates/template.html'
+            templateUrl: 'templates/template.html',
+            scope:{
+                croutonsMessages:"="
+            }
         };
     }]);
 

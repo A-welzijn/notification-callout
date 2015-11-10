@@ -9,7 +9,10 @@
     module.directive('aWelzijnNotificationCallout', [function () {
         return {
             restrict: 'E',
-            templateUrl: 'templates/template.html'
+            templateUrl: 'templates/template.html',
+            scope:{
+                croutonsMessages:"="
+            }
         };
     }]);
 
@@ -67,29 +70,7 @@
   'use strict';
 
   $templateCache.put('templates/template.html',
-    "<ul class=\"errorMessages\">\r" +
-    "\n" +
-    "      <a-welzijn-notification-callout-message ng-repeat='callout in errors' call-out='callout' callout-class='callout-danger' index='{{$index}}' />\r" +
-    "\n" +
-    "</ul>\r" +
-    "\n" +
-    "<ul class=\"successMessages\">\r" +
-    "\n" +
-    "      <a-welzijn-notification-callout-message ng-repeat='callout in notifications' call-out='callout' callout-class='callout-success' index='{{$index}}' />\r" +
-    "\n" +
-    "</ul>\r" +
-    "\n" +
-    "<ul class=\"warningMessages\">\r" +
-    "\n" +
-    "      <a-welzijn-notification-callout-message ng-repeat='callout in warnings' call-out='callout' callout-class='callout-warning' index='{{$index}}' />\r" +
-    "\n" +
-    "</ul>\r" +
-    "\n" +
-    "<ul class=\"messages\">\r" +
-    "\n" +
-    "      <a-welzijn-notification-callout-message ng-repeat='callout in messages' call-out='callout' callout-class='callout' index='{{$index}}' />\r" +
-    "\n" +
-    "</ul>"
+    "<div ng-class=\"croutonsMessages == true? 'croutonsMessages': ''\"> <ul class=errorMessages> <a-welzijn-notification-callout-message ng-repeat=\"callout in $parent.errors\" call-out=callout callout-class=callout-danger index=\"{{$index}}\"> </ul> <ul class=successMessages> <a-welzijn-notification-callout-message ng-repeat=\"callout in $parent.notifications\" call-out=callout callout-class=callout-success index=\"{{$index}}\"> </ul> <ul class=warningMessages> <a-welzijn-notification-callout-message ng-repeat=\"callout in $parent.warnings\" call-out=callout callout-class=callout-warning index=\"{{$index}}\"> </ul> <ul class=messages> <a-welzijn-notification-callout-message ng-repeat=\"callout in $parent.messages\" call-out=callout callout-class=callout index=\"{{$index}}\"> </ul> </div>"
   );
 
 }]);

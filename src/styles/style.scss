@@ -26,3 +26,11 @@
 	.alert > strong {
 		margin-right: 8px;
 	}
+	
+	.croutonsMessages{
+    position: fixed;
+    top: 40px;
+    z-index: 200;
+    width: 50%;
+    left: 25%;
+}
