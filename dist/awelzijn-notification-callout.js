@@ -16,7 +16,7 @@
         };
     }]);
 
-    module.directive('aWelzijnNotificationCalloutMessage', ['$compile', 'aWelzijnNotificationService', function ($compile, notificationService) {
+    module.directive('aWelzijnNotificationCalloutMessage', ['$compile', 'aWelzijnNotificationService', '$timeout' , function ($compile, notificationService, $timeout) {
 
         var linker = function (scope, element, attrs) {
 
@@ -47,12 +47,30 @@
 			var dismissible = (scope.callOut.dismissible == undefined || scope.callOut.dismissible == "") ? false : true;
             var showTitle = (scope.callOut.title == undefined || scope.callOut.title == "") ? false : true;
 			
-            var template = "<li> <div class='alert " + attrs.calloutClass + "' ng-class=\"{ 'alert-dismissible': " + dismissible + " }\" role=alert>\n" +
+            var template = "<li ng-mouseover='cancelTimeout()' ng-mouseleave=\"" + scope.callOut.fade + " ? removeAfterFade() : ''\" ng-class=\"{ 'faden': " + scope.callOut.fade + " }\">" + 
+                               "<div class='alert " + attrs.calloutClass + "' ng-class=\"{ 'alert-dismissible': " + dismissible + " }\" role=alert>\n" +
                                "<a ng-show='{{" + dismissible + " }}' class=\"close float-right\" data-dismiss=alert aria-label='Sluit' ng-click='removeCallOut()'><i class=\"fa fa-times\"></i></a>\n" +
                                "<strong ng-show='" + showTitle + "'>" + scope.callOut.title + "</strong>" + scope.callOut.message + "</div> </li>";
 
             element.html(template).show();
             $compile(element.contents())(scope);
+            
+            var timeout;
+            scope.removeAfterFade = function () {
+                timeout = $timeout(function () {
+                    scope.removeCallOut();
+                }, 6000)
+            }
+
+            if (scope.callOut.fade) {
+                scope.removeAfterFade();
+            }
+
+            scope.cancelTimeout = function () {
+                if (timeout) {
+                    $timeout.cancel(timeout);
+                }
+            }
         }
 
         return {

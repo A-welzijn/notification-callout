@@ -29,3 +29,31 @@
   z-index: 200;
   width: 50%;
   left: 25%; }
+
+.faden {
+  animation: faden 3s 1;
+  -webkit-animation: faden 3s 1;
+  /*animation:display 3s 1;
+    -webkit-animation:display 3s 1;*/
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards; }
+
+.faden:hover {
+  -webkit-animation: 0;
+  animation: 0; }
+
+@keyframes faden {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@-webkit-keyframes faden {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
